@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="canonical" href="https://partner-vyplaty.veridok.ru/price.html">
+<title>Цена — расчёт вознаграждения партнёров</title>
+<meta name="description" content="Цена сервиса расчёта вознаграждения партнёров для компаний-вендоров: начисления по правилам программы, кабинет партнёра, реестр выплат.">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+<script src="smoke.js" defer></script>
+<script>
+  /* Открыт экран цен — price_view через smoke.js (window.smokeTrack). */
+  document.addEventListener("DOMContentLoaded", function () { if (window.smokeTrack) window.smokeTrack("price_view"); });
+</script>
+</head>
+<body data-page="price">
+
+<header><div class="wrap">
+  <div class="logo"><a href="index.html" data-ev="click_logo_home">Партнёрские выплаты</a></div>
+  <nav class="top"><a href="index.html#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="index.html#primer" data-ev="click_nav_primer">Пример</a></nav>
+</div></header>
+
+<div class="wrap">
+  <div class="hero">
+    <h1>Тариф и цена</h1>
+    <p class="sub">Правила программы, начисления, кабинет партнёра и реестр выплат — без процента с выплат.</p>
+  </div>
+
+  <section id="cena">
+    <div class="grid">
+      <div class="card"><b>До 50 партнёров</b><span>1 990 ₽ в месяц — до 50 активных партнёров.</span><br><a class="btn" href="pay.html?plan=do_50" data-ev="payment_click click_pay_do_50">Оплатить — 1 990 ₽</a></div>
+      <div class="card"><b>До 300 партнёров</b><span>4 900 ₽ в месяц — до 300 активных партнёров.</span><br><a class="btn" href="pay.html?plan=do_300" data-ev="payment_click click_pay_do_300">Оплатить — 4 900 ₽</a></div>
+    </div>
+    <p class="note nalog">Цены указаны без НДС.</p>
+    <p class="cta-note">Ранний доступ · Оплата на этой странице пока не принимается</p>
+    <div class="actions"><a class="btn" href="index.html" data-ev="click_back">Вернуться к описанию</a></div>
+  </section>
+</div>
+
+<footer><div class="wrap">
+  <p>Оператор: ИП Гудев Роман, ИНН 615007167949 &middot; <a href="privacy.html" data-ev="click_legal_privacy">Политика обработки персональных данных</a></p>
+  <p class="muted">Расчёт вознаграждения по вашим правилам и данным. Сервис не принимает и не переводит деньги; выплаты делает ваша компания.</p>
+</div></footer>
+
+</body>
+</html>
