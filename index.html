@@ -8,6 +8,10 @@
 <meta name="description" content="Для компаний, которые сами ведут партнёрскую программу: начисление вознаграждения партнёрам по правилам программы, кабинет партнёра и реестр выплат.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -62,38 +66,68 @@
 </head>
 <body>
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Партнёрские выплаты</a></div>
-  <nav class="top"><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">Партнёрские выплаты</a>
+  <nav><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Сколько вы должны каждому партнёру в этом месяце — посчитано по правилам программы, а не в таблице</h1>
-    <p class="sub">Для компаний-вендоров, которые сами платят партнёрам за приведённых клиентов: начисления по вашим правилам, кабинет, где партнёр видит свои начисления, и реестр выплат на конец периода.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">Мне это нужно</a>
-    <p class="cta-note">Ранний доступ · Оплата на этой странице пока не принимается</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> Для компаний-вендоров</p>
+      <h1 class="rise" style="--i:1" data-len="long">Сколько вы должны каждому партнёру в этом месяце&nbsp;<span class="soft">— посчитано по правилам программы, а не в таблице</span></h1>
+      <p class="rise" style="--i:2">Для компаний-вендоров, которые сами платят партнёрам за приведённых клиентов: начисления по вашим правилам, кабинет, где партнёр видит свои начисления, и реестр выплат на конец периода.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">Мне это нужно</a>
+      <p class="meta rise" style="--i:4">Ранний доступ · Оплата на этой странице пока не принимается</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="80" width="1040" height="640" fill="#ffffff" rx="24" stroke="#dde2ea" stroke-width="3" /><text x="120" y="165" font-size="40" font-weight="600" fill="#0a1524">каждому партнёру</text><line x1="120" y1="210" x2="1080" y2="210" stroke="#dde2ea" stroke-width="3" /><rect x="120" y="260" width="44" height="44" fill="#dfe8f7" rx="8" /><text x="190" y="294" font-size="32" fill="#566174">в этом месяце</text><rect x="120" y="390" width="44" height="44" fill="#dfe8f7" rx="8" /><text x="190" y="424" font-size="32" fill="#566174">правилам программы</text><rect x="120" y="520" width="44" height="44" fill="#dfe8f7" rx="8" /><text x="190" y="554" font-size="32" fill="#566174">реестр выплат</text><rect x="700" y="250" width="370" height="420" fill="#dfe8f7" rx="20" /><text x="730" y="320" font-size="34" font-weight="600" fill="#0a1524">месяца</text><rect x="740" y="420" width="50" height="180" fill="#ffffff" rx="8" stroke="#dde2ea" stroke-width="3" /><rect x="820" y="360" width="50" height="240" fill="#12397a" rx="8" stroke="#12397a" stroke-width="3" /><rect x="900" y="500" width="50" height="100" fill="#ffffff" rx="8" stroke="#dde2ea" stroke-width="3" /><rect x="980" y="480" width="50" height="120" fill="#ffffff" rx="8" stroke="#dde2ea" stroke-width="3" /></svg></figure>
+    <dl class="facts">
+      <div><dt>Для</dt><dd>Компаниям с партнёрскими программами</dd></div>
+      <div><dt>Начисления</dt><dd>По вашим правилам</dd></div>
+      <div><dt>Как</dt><dd>Готовит реестр выплат</dd></div>
+      <div><dt>Доступ</dt><dd>В подготовке</dd></div>
+    </dl>
+  </section>
 
   <section id="chto" data-view="features_view">
-    <h2>Что вы получаете</h2>
-    <div class="grid">
-      <div class="card"><b>Правила программы</b><span>Процент, фиксированная сумма, уровни партнёров.</span><br><a class="btn" href="price.html" data-ev="feature_pravila">Мне это нужно</a></div>
-      <div class="card"><b>Начисления</b><span>По каждой оплате приведённого клиента.</span><br><a class="btn" href="price.html" data-ev="feature_nachisleniya">Мне это нужно</a></div>
-      <div class="card"><b>Кабинет партнёра</b><span>Партнёр сам видит, что начислено и за что.</span><br><a class="btn" href="price.html" data-ev="feature_kabinet">Мне это нужно</a></div>
-      <div class="card"><b>Реестр выплат</b><span>Кому, сколько и за какой период — на конец месяца.</span><br><a class="btn" href="price.html" data-ev="feature_reestr">Мне это нужно</a></div>
+    <div class="stack"><h2>Что вы получаете</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="60" y="50" width="680" height="500" fill="#ffffff" rx="22" stroke="#dde2ea" stroke-width="3" /><text x="100" y="120" font-size="36" font-weight="600" fill="#0a1524">Правила программы</text><text x="100" y="175" font-size="30" fill="#566174">уровни партнёров</text><line x1="120" y1="500" x2="680" y2="500" stroke="#b9c3d2" stroke-width="4" /><rect x="150" y="410" width="70" height="90" fill="#dfe8f7" rx="8" /><rect x="280" y="330" width="70" height="170" fill="#dfe8f7" rx="8" /><rect x="410" y="260" width="70" height="240" fill="#12397a" rx="8" /><rect x="540" y="370" width="70" height="130" fill="#dfe8f7" rx="8" /></svg></div>
+        <h3>Правила программы</h3><p>Процент, фиксированная сумма, уровни партнёров.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_pravila">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="60" y="50" width="680" height="500" fill="#ffffff" rx="22" stroke="#dde2ea" stroke-width="3" /><text x="100" y="120" font-size="36" font-weight="600" fill="#0a1524">Начисления</text><text x="100" y="175" font-size="30" fill="#566174">приведённого клиента</text><rect x="120" y="220" width="540" height="300" fill="#ffffff" rx="16" stroke="#dde2ea" stroke-width="3" /><rect x="150" y="250" width="36" height="36" fill="#dfe8f7" rx="8" /><rect x="210" y="258" width="280" height="18" fill="#dde2ea" rx="8" /><rect x="150" y="310" width="36" height="36" fill="#dfe8f7" rx="8" /><rect x="210" y="318" width="220" height="18" fill="#dde2ea" rx="8" /><rect x="150" y="370" width="36" height="36" fill="#dfe8f7" rx="8" /><rect x="210" y="378" width="320" height="18" fill="#b9c3d2" rx="8" /><rect x="150" y="430" width="36" height="36" fill="#dfe8f7" rx="8" /><rect x="210" y="438" width="180" height="18" fill="#dde2ea" rx="8" /><polyline points="156,268 166,280 182,258" fill="none" stroke="#12397a" stroke-width="4" /></svg></div>
+        <h3>Начисления</h3><p>По каждой оплате приведённого клиента.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_nachisleniya">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="60" y="50" width="680" height="500" fill="#ffffff" rx="22" stroke="#dde2ea" stroke-width="3" /><text x="100" y="120" font-size="36" font-weight="600" fill="#0a1524">Кабинет партнёра</text><text x="100" y="175" font-size="30" fill="#566174">что начислено</text><rect x="110" y="230" width="210" height="280" fill="#ffffff" rx="28" stroke="#dde2ea" stroke-width="3" /><rect x="140" y="270" width="150" height="34" fill="#dfe8f7" rx="12" /><rect x="140" y="320" width="150" height="34" fill="#12397a" rx="12" /><rect x="140" y="370" width="110" height="34" fill="#dfe8f7" rx="12" /><rect x="380" y="260" width="300" height="180" fill="#ffffff" rx="18" stroke="#dde2ea" stroke-width="3" /><polygon points="400,300 380,270 430,270" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="410" y="300" width="200" height="22" fill="#dde2ea" rx="8" /><rect x="410" y="340" width="150" height="22" fill="#b9c3d2" rx="8" /><rect x="410" y="380" width="170" height="22" fill="#dde2ea" rx="8" /></svg></div>
+        <h3>Кабинет партнёра</h3><p>Партнёр сам видит, что начислено и за что.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_kabinet">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="60" y="50" width="680" height="500" fill="#ffffff" rx="22" stroke="#dde2ea" stroke-width="3" /><text x="100" y="120" font-size="36" font-weight="600" fill="#0a1524">Реестр выплат</text><text x="100" y="175" font-size="30" fill="#566174">конец месяца</text><rect x="100" y="230" width="200" height="280" fill="#ffffff" rx="16" stroke="#dde2ea" stroke-width="3" /><rect x="500" y="230" width="200" height="280" fill="#ffffff" rx="16" stroke="#dde2ea" stroke-width="3" /><rect x="125" y="280" width="140" height="16" fill="#dde2ea" rx="8" /><rect x="525" y="280" width="120" height="16" fill="#b9c3d2" rx="8" /><line x1="310" y1="288" x2="490" y2="288" stroke="#b9c3d2" stroke-width="3" /><rect x="125" y="340" width="100" height="16" fill="#dde2ea" rx="8" /><rect x="525" y="340" width="80" height="16" fill="#b9c3d2" rx="8" /><line x1="310" y1="348" x2="490" y2="348" stroke="#12397a" stroke-width="3" /><rect x="125" y="400" width="160" height="16" fill="#dde2ea" rx="8" /><rect x="525" y="400" width="140" height="16" fill="#b9c3d2" rx="8" /><line x1="310" y1="408" x2="490" y2="408" stroke="#b9c3d2" stroke-width="3" /></svg></div>
+        <h3>Реестр выплат</h3><p>Кому, сколько и за какой период — на конец месяца.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_reestr">Мне это нужно</a>
+      </article>
     </div>
   </section>
 
-  <section id="primer" data-view="example_view">
-    <h2>Пример (вымышленные данные)</h2>
-    <p class="fine">Компания продаёт программу для салонов красоты и платит партнёрам — консультантам и агентствам — 20 % с оплат приведённых клиентов в первый год. Партнёров тридцать, клиентов у них несколько сотен. В конце месяца сервис показывает, что начислено каждому, отдельно — возвраты, которые уменьшают сумму. Бухгалтер выгружает реестр выплат, а партнёры заранее видят свои суммы в кабинете и не пишут с вопросами.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Выбрать тариф</a>
+  <section id="primer" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Пример</h2>
+      <p>Компания продаёт программу для салонов красоты и платит партнёрам — консультантам и агентствам — 20 % с оплат приведённых клиентов в первый год. Партнёров тридцать, клиентов у них несколько сотен. В конце месяца сервис показывает, что начислено каждому, отдельно — возвраты, которые уменьшают сумму. Бухгалтер выгружает реестр выплат, а партнёры заранее видят свои суммы в кабинете и не пишут с вопросами.</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Выбрать тариф</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="200" y1="150" x2="1000" y2="150" stroke="#dde2ea" stroke-width="6" /><circle cx="240" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="240" y="230" font-size="32" font-weight="600" text-anchor="middle" fill="#0a1524">месяц</text><circle cx="600" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="600" y="230" font-size="32" font-weight="600" text-anchor="middle" fill="#0a1524">реестр</text><circle cx="960" cy="150" r="22" fill="#12397a" stroke="#12397a" stroke-width="6" /><text x="960" y="230" font-size="32" font-weight="600" text-anchor="middle" fill="#0a1524">кабинет</text><rect x="120" y="300" width="960" height="420" fill="#ffffff" rx="24" stroke="#dde2ea" stroke-width="3" /><rect x="170" y="364" width="44" height="44" fill="#dfe8f7" rx="8" /><text x="240" y="400" font-size="34" fill="#566174">конце месяца</text><rect x="170" y="454" width="44" height="44" fill="#dfe8f7" rx="8" /><text x="240" y="490" font-size="34" fill="#566174">реестр выплат</text><rect x="170" y="544" width="44" height="44" fill="#dfe8f7" rx="8" /><text x="240" y="580" font-size="34" fill="#566174">свои суммы</text></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>Как это работает</h2>
-    <p>Многие компании, которые продают свой продукт — программу, онлайн-сервис, обучение, — привлекают клиентов через партнёров: консультантов, агентства, блогеров, интеграторов. Партнёр приводит клиента и получает вознаграждение с его оплат.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>Как это работает</h2></div>
+    <div class="stack">
+      <p>Многие компании, которые продают свой продукт — программу, онлайн-сервис, обучение, — привлекают клиентов через партнёров: консультантов, агентства, блогеров, интеграторов. Партнёр приводит клиента и получает вознаграждение с его оплат.</p>
     <p>Пока партнёров пять, начисления считают в таблице. Когда их десятки, таблица перестаёт справляться: у разных партнёров разные условия, клиенты платят помесячно, бывают возвраты и переходы на другой тариф, а партнёры пишут с вопросом, почему начислено именно столько.</p>
     <p>Для этой работы есть отдельные инструменты. Западный образец — Rewardful; в России есть сервисы партнёрских программ с месячной подпиской. Сервис, который мы готовим, сосредоточен на одной части: правильно посчитать вознаграждение и подготовить выплаты.</p>
     <p>Сначала вы описываете правила программы: процент с оплат или фиксированную сумму за клиента, срок, в течение которого партнёр получает вознаграждение, уровни партнёров с разными условиями. Правила можно задать для всей программы и отдельно для конкретного партнёра.</p>
@@ -107,31 +141,34 @@
     <p>Данные клиентов и партнёров используются только для расчёта вознаграждения и не передаются третьим лицам.</p>
     <p>Сервис рассчитан на компании в России, которые сами ведут партнёрскую программу и платят партнёрам. Сейчас он в подготовке: сначала мы проверяем, нужен ли он таким компаниям.</p>
     <p>Сервис считает начисления по вашим правилам и данным; решение о выплате, сама выплата и налоговые вопросы остаются за вашей компанией.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Вопросы и ответы</h2>
-    <h3>Какие правила вознаграждения можно задать?</h3>
-    <p>Процент с оплат или фиксированную сумму за клиента, срок начислений и уровни партнёров с разными условиями.</p>
-    <h3>Откуда берутся данные об оплатах?</h3>
-    <p>Из выгрузки вашей учётной системы, платёжного сервиса или CRM.</p>
-    <h3>Сервис сам переводит деньги партнёрам?</h3>
-    <p>Нет. Сервис готовит реестр выплат; деньги уходят с вашего счёта, как и сейчас.</p>
-    <h3>Видит ли партнёр свои начисления?</h3>
-    <p>Да, в своём кабинете: приведённые клиенты, оплаты, начислено и выплачено.</p>
-    <h3>Можно уже пользоваться?</h3>
-    <p>Пока нет — в подготовке. Сначала мы проверяем, нужен ли сервис компаниям с партнёрскими программами.</p>
+    <div class="stack"><h2>Вопросы и ответы</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Какие правила вознаграждения можно задать?</h3><p>Процент с оплат или фиксированную сумму за клиента, срок начислений и уровни партнёров с разными условиями.</p></div>
+      <div class="split flip"><h3>Откуда берутся данные об оплатах?</h3><p>Из выгрузки вашей учётной системы, платёжного сервиса или CRM.</p></div>
+      <div class="split flip"><h3>Сервис сам переводит деньги партнёрам?</h3><p>Нет. Сервис готовит реестр выплат; деньги уходят с вашего счёта, как и сейчас.</p></div>
+      <div class="split flip"><h3>Видит ли партнёр свои начисления?</h3><p>Да, в своём кабинете: приведённые клиенты, оплаты, начислено и выплачено.</p></div>
+      <div class="split flip"><h3>Можно уже пользоваться?</h3><p>Пока нет — в подготовке. Сначала мы проверяем, нужен ли сервис компаниям с партнёрскими программами.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Сколько у вас партнёров</h2>
-    <p><label>Партнёров в программе<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— выберите —</option><option>До 20</option><option>20–100</option><option>100–500</option><option>Больше 500</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Начать</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Сколько у вас партнёров</h2>
+    </div>
+    <div class="tile stack">
+      <label>Партнёров в программе<select data-ev-focus="form_start"><option value="">— выберите —</option><option>До 20</option><option>20–100</option><option>100–500</option><option>Больше 500</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Начать</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>Партнёрские выплаты</b></p>
   <p>Оператор: ИП Гудев Роман, ИНН 615007167949 &middot; <a href="privacy.html" data-ev="click_legal_privacy">Политика обработки персональных данных</a></p>
-  <p class="muted">Расчёт вознаграждения по вашим правилам и данным. Сервис не принимает и не переводит деньги; выплаты делает ваша компания.</p>
+  <p>Расчёт вознаграждения по вашим правилам и данным. Сервис не принимает и не переводит деньги; выплаты делает ваша компания.</p>
 </div></footer>
 
 </body>
